@@ -1,0 +1,173 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+#hero-section {
+    height: 660px;
+    /* margin-top: 0; */
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(images/cover-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+h1 {
+    background-color: #EF6351;
+    color: #FCEFB4;
+    font-size: 60px;
+    font-weight: 900;
+    margin: 110px auto 30px 100px;
+    padding: 5px 40px;
+    border-radius: 10px
+}
+
+#intro-txt {
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-top: 0;
+    text-shadow: 0 0 3px black
+}
+
+h2, h3, h4, p {
+    color: #252422
+}
+
+
+#activities-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #FCEFB4;
+    padding: 30px 0 80px 0
+}
+
+#specific-activities  {
+    background-color: #FCEFB4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+
+}
+
+
+.activity-img {
+    width: 300px;
+    border-radius: 100%;
+    border: solid #F9DC5C 8px;
+
+}
+
+.activity-intro-txt {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.activity-txt {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container {
+    height: 300px;
+    width: 400px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1000ms ease-in-out;
+}
+
+.container:hover > .card {
+    transform: rotateY(180deg);
+
+}
+
+#food-front, #food-back, #cafe-front, #cafe-back, #lotus-front, #lotus-back 
+{
+    height: 300px;
+    width: 400px;
+    padding-top: 30px;
+    background-color: rgba(253, 248, 225, 0.5);
+    border-radius: 5%;
+    box-shadow: 0 0 5px 2px rgba(50,50,50,0.05);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#food-back, #cafe-back, #lotus-back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.activity-details {
+    width: 80%;
+    text-align: left;
+}
+
+#guide-section {
+    background-color: #fbc3bc;
+    padding: 70px 0;
+
+}
+
+#guide-card {
+    background-color: #ffe3e0;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px 20px 15px;
+    border-radius: 3%;
+    border-bottom: 8px solid #f38375;
+    box-shadow: 0 0 5px 2px rgba(50,50,50,0.05)
+
+}
+
+#profile-img {
+    margin-right: 20px;
+    width: 200px;
+    border-radius: 3%;
+}
+
+#guide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 20px
+    
+}
